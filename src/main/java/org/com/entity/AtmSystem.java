@@ -38,6 +38,7 @@ public void enterPin ( String pin) {
 		
 	}catch ( Exception e ){
 		System.out.println (e.getMessage ());
+		throw e;
 	}
 	
 }

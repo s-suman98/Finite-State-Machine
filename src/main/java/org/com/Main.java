@@ -16,13 +16,23 @@ public static void main (String[] args) {
 	Card card = Card.builder ().cardHolderName ("ANISH SUMAN").cardNo ("1234-2345-6789-4567").securityCode ("700").build ();
 	
 	atmSystem.insertCard (card);
+ 
 	
-	atmSystem.enterPin ("1234");
+	  try {
+		  atmSystem.enterPin ("1234");
+		  
+	  }catch ( Exception e){
+		 
+		 
+		 return;
+	  }
 	
 	atmSystem.enterChoice (Transactiontype.CHECK_BALANCE);
-	
+	  
+	  atmSystem.enterChoice (Transactiontype.WITHDRAW);
+
 	atmSystem.ejectCard ();
 	
-	
+
 }
 }

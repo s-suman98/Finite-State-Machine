@@ -13,7 +13,7 @@ private  CardValidator cardValidator=new RandomValidator ();
 @Override
 public void insertCard (AtmSystem context , Card card) {
 	
-	throw new IllegalStateException ("you cant entre pin in idle  state");
+	throw new IllegalStateException("Cannot insert card while card is already inserted");
 
 	
 }
@@ -30,6 +30,8 @@ public void ejectCard (AtmSystem context) {
 public void enterPin (AtmSystem context,String pin) {
 	
 	if( cardValidator.validateCard (context.getCard (), pin) ){
+		
+		System.out.println ("Autheticated hua ki nhi");
 		
 		context.setAtmState (new Autheticated ());
 	

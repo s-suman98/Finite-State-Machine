@@ -30,7 +30,7 @@ public void enterPin (AtmSystem context, String pin) {
 public void enterChoice (AtmSystem context, Transactiontype transactiontype) {
 	
 	
-	context.setAtmState (new Transacting (context));
+	context.setAtmState (new Transacting ());
 	
 	
 	
