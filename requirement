@@ -1,0 +1,29 @@
+
+
+ -what type of transaction atim should support
+
+    - check baance
+     -withdraw
+     -cash
+
+ - what sdenomination
+
+     100,50,20,10
+
+ - how wis authnticated
+    using pin
+
+
+
+    for state the state anf the event on the system must be fixed and there must be only none object behaviour
+
+
+     All state gets the same set of behaviour gets all the
+
+
+     - segrate th einteface to have mactiinh behaviour
+
+
+
+
+
